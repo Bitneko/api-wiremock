@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"time"
 
-	"api-wiremock/configuration"
+	"api-wiremock/internal/configuration"
 
 	"github.com/gorilla/mux"
 	log "github.com/sirupsen/logrus"
