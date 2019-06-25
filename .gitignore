@@ -1,0 +1,37 @@
+################
+# ci artifacts #
+################
+Makefile.properties
+coverage.out
+
+#########################
+# development artifacts #
+#########################
+# live-reload service
+.realize.yaml
+vendor
+config.yaml
+.vendor-new
+preview
+*.log
+.git-*
+tmp
+
+###################
+# build artifacts #
+###################
+./bin/*
+
+################
+# os artifacts #
+################
+**/.DS_Store
+
+#################
+# ide artifacts #
+#################
+# vscode
+\.vscode/
+# intellij
+.idea
+*.iml

@@ -1,0 +1,29 @@
+version: "3.5"
+networks:
+  api_wiremock:
+    name: 'api_wiremock'
+  mcf:
+    name: "mcf"
+    external: true
+services:
+  api_wiremock:
+    build:
+      context: './mocks/msf'
+      dockerfile: './Dockerfile'
+    entrypoint:
+      - "java"
+      - "-jar"
+      - "/app/wiremock.jar"
+      - "--port"
+      - "8080"
+      - "--proxy-all=http://host.docker.internal:8888"
+      - "--print-all-network-traffic"
+    networks:
+    - api_wiremock
+    - mcf
+    ports:
+    - 8080:8080
+    user: "10000"
+    volumes:
+    - "./mocks/msf/.data/mappings:/app/mappings"
+    - "./mocks/msf/.data/__files:/app/__files"

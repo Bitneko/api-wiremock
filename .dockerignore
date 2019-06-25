@@ -1,0 +1,17 @@
+# provisioning stuff
+docker-compose.yml
+Dockerfile
+Makefile
+
+# binary builds
+api-wiremock
+api-wiremock.exe
+
+# development stuff
+.bin
+.dockerignore
+.gitignore
+.vscode
+preview
+README.md
+.git
