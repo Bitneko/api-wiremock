@@ -22,10 +22,10 @@ make clean
 # Configuration
 
 | Environment Variable | Description | Required |
-| --- | --- |
-| `API-WIREMOCK` | Defines the URL of the wiremock service| Y |
-| `API-TARGET` | Defines the URL of the 3rd party API| Y |
-| `PROXY_URL` | Defines proxy url to call target API if any| N |
+| --- | --- | --- |
+| `API-WIREMOCK` | Defines the URL of the wiremock service | Y |
+| `API-TARGET` | Defines the URL of the 3rd party API | Y |
+| `PROXY_URL` | Defines proxy url to call target API if any | N |
 
 
 # License
