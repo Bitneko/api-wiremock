@@ -22,5 +22,3 @@ WORKDIR /root/
 COPY --from=development /go/src/api-wiremock/bin .
 
 EXPOSE 8888
-
-ENTRYPOINT ["./api-wiremock"] 
